@@ -1,17 +1,16 @@
 <%- include('./partials/header') %>
 <div class="landing-page" id="about">
   <h1 id="landing-text">Hi, I'm Curtis. I love coding and building full-stack applications.</h1>
-  <a href="#projects" id="projects-link">Checkout My Work</a>
+  <a href="#projects" class="projects-link" id="projects">Checkout My Work</a>
   <img src="/images/arrow-down.svg" class="img-fluid" alt="alternatetext"></img>
 </div>
 <div class="container">
-  <h4 id="projects">Applications I've Built</h4>
   <div class="flex flex-col w-full mb-20">
-    <h1 class="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
-      Apps I've Built
-    </h1>
-    <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
-    
+    <h1 class="text-center">Apps I've Built</h1>
+    <p class="text-center">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
+      facilis repellat ab cupiditate alias vero aliquid obcaecati quisquam
+      fuga dolore.
     </p>
   </div>
   <div class="row">
@@ -57,6 +56,36 @@
         </div>
       </div>
     </div>
+  </div>
+</div>
+<div class="container px-5 py-10 mx-auto">
+  <div class="text-center">
+    <h1>Skills & Technologies</h1>
+    <p class="mx-auto">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi sit
+      ipsa delectus eum quo voluptas aspernatur accusantium distinctio
+      possimus est.
+    </p>
+  </div>
+  <div class="row" id="skills">
+  <% skills.forEach(function (skill, idx) {%>
+    <% if (idx < 3) {%>
+    <div class="col-md-5 mx-auto">
+      <div class="card">
+        <div class="card-body">
+          <h6 class="card-text"><%=skill%></h3>
+        </div>
+      </div>
+    </div>
+    <%} else {%>
+    <div class="col-md-5 mx-auto">
+      <div class="card mx-auto">
+        <div class="card-body">
+          <h6 class="card-text"><%=skill%></h3>
+        </div>
+      </div>
+    </div>
+  <%}})%>
   </div>
 </div>
 <%- include('./partials/footer') %>

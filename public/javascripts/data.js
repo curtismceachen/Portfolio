@@ -1,1 +1,0 @@
-// export const skills = ["JavaScript (ES6)", "Node.js", "MongoDB", "React", "Python", "Django", "PostgreSQL", "MVC Architecture"]

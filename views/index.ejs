@@ -1,16 +1,23 @@
 <%- include('./partials/header') %>
 <div class="landing-page" id="about">
-  <h1 id="landing-text">Hi, I'm Curtis. I love coding and building full-stack applications.</h1>
-  <a href="#projects" class="projects-link" id="projects">Checkout My Work</a>
-  <img src="/images/arrow-down.svg" class="img-fluid" alt="alternatetext"></img>
+  <h1 class="text-center mx-auto header-font" id="landing-text">Hi, I'm Curtis. I love to code and build</br>full-stack applications.</h1>
+  <a href="#projects" class="projects-link text-center body-font" id="">Checkout My Work 
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down white" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+    </svg>
+  </a>
 </div>
-<div class="container">
+<div id="projects"></div>
+<div class="container section">
   <div class="flex flex-col w-full mb-20">
-    <h1 class="text-center">Apps I've Built</h1>
-    <p class="text-center">
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
-      facilis repellat ab cupiditate alias vero aliquid obcaecati quisquam
-      fuga dolore.
+    <h1 class="text-center header-font">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-code-slash icon-yellow" viewBox="0 0 16 16">
+        <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/>
+      </svg><br/>My Recent Work</h1>
+    <p class="text-center mx-auto para-width body-font">
+      As an adaptable programmer, I've built apps using a variety of technology 
+      stacks. Hover over each app below for more information, or click to visit 
+      the app.
     </p>
   </div>
   <div class="row">
@@ -20,9 +27,11 @@
           <a href="https://blooming-wildwood-28468.herokuapp.com/spots" key="/images/skatespotter.png">
             <img class="card-img" alt="app" src="/images/skatespotter.png"/>
             <div class="card-img-overlay project-opacity">
-              <h6 class="card-subtitle">MERN Stack</h6>
-              <h5 class="card-title">SkateSpotter</h5>
-              <div class="card-text">An app for the skateboarding community that allows users to post the location and description of skate spots in their area.</div>
+              <h6 class="card-title text-center green">MERN Stack</h6>
+              <h5 class="card-subtitle text-center title-colour header-font">SkateSpotter</h5>
+              <div class="card-text body-font">An app for the skateboarding community 
+                that allows users to post the location and description of skate spots 
+                in their area. Built with React, this is a high-performance application.</div>
             </div>
           </a>
         </div>
@@ -34,9 +43,11 @@
           <a href="https://digipetsforever.herokuapp.com/" key="/images/digipets.png">
             <img class="card-img" alt="app" src="/images/digipets.png"/>
             <div class="card-img-overlay project-opacity">
-              <h6 class="card-subtitle">Python, Django, PostgreSQL</h6>
-              <h5 class="card-title">Digipets</h5>
-            <div class="card-text">The virtual pet app that gives users the joy of owning a pet without the obligations of real-life ownership.</div>
+              <h6 class="card-title text-center green">Python, Django, PostgreSQL</h6>
+              <h5 class="card-subtitle text-center title-colour header-font">Digipets</h5>
+              <div class="card-text body-font">The virtual pet app that gives users the joy of 
+                owning a pet without the obligations of real-life ownership. This app was built 
+                in callaboration with a UX Design team, and provides an excellent user experience.</div>
             </div>
           </a>
         </div>
@@ -48,9 +59,10 @@
           <a href="https://tp-lab-data.herokuapp.com/" key="/images/dailylabdata.png">
             <img class="card-img" alt="app" src="/images/dailylabdata.png"/>
             <div class="card-img-overlay project-opacity">
-              <h6 class="card-subtitle">MongoDB/Mongoose, Node.js, Express</h6>
-              <h5 class="card-title">Daily Lab Data</h5>
-              <div class="card-text">Allows water treatment technicians to store daily lab results on the cloud.</div>
+              <h6 class="card-title text-center green">MongoDB, Node.js, Express</h6>
+              <h5 class="card-subtitle text-center title-colour header-font">Daily Lab Data</h5>
+              <div class="card-text body-font">This app allows water treatment technicians to store 
+                their daily lab results on the cloud.</div>
             </div>
           </a>
         </div>
@@ -58,22 +70,29 @@
     </div>
   </div>
 </div>
-<div class="container px-5 py-10 mx-auto">
+<div id="skills"></div>
+<div class="container px-5 py-10 mx-auto section">
   <div class="text-center">
-    <h1>Skills & Technologies</h1>
-    <p class="mx-auto">
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi sit
-      ipsa delectus eum quo voluptas aspernatur accusantium distinctio
-      possimus est.
+    <h1 class="header-font">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-tools icon-yellow" viewBox="0 0 16 16">
+        <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0Zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708ZM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11Z"/>
+      </svg><br/>Languages & Technologies</h1>
+    <p class="mx-auto para-width body-font">
+      I write code in JavaScript and Python, and have worked with
+      both relational and document databases. I love taking on challenges, and 
+      learning new skills is my passion!
     </p>
   </div>
-  <div class="row" id="skills">
+  <div class="row">
   <% skills.forEach(function (skill, idx) {%>
-    <% if (idx < 3) {%>
+    <% if (idx < 4) {%>
     <div class="col-md-5 mx-auto">
       <div class="card">
         <div class="card-body">
-          <h6 class="card-text"><%=skill%></h3>
+          <h6 class="card-text skill-colour header-font">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-check-fill green" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zm8.854-9.646a.5.5 0 0 0-.708-.708L7.5 7.793 6.354 6.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+            </svg> <%=skill%></h6>
         </div>
       </div>
     </div>
@@ -81,19 +100,44 @@
     <div class="col-md-5 mx-auto">
       <div class="card mx-auto">
         <div class="card-body">
-          <h6 class="card-text"><%=skill%></h3>
+          <h6 class="card-text skill-colour header-font">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-check-fill green" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zm8.854-9.646a.5.5 0 0 0-.708-.708L7.5 7.793 6.354 6.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+            </svg> <%=skill%></h3>
         </div>
       </div>
     </div>
   <%}})%>
   </div>
 </div>
-<div>
-  <h1 class="text-center mx-auto">Contact Me</h1>
-  <p class="text-center">Whether you're looking to hire, or just looking for freelance work, feel free to reach out. You can email or call me at</p>
+<div class="section" id="contact">
+  <h1 class="text-center mx-auto header-font">
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-voicemail icon-yellow" viewBox="0 0 16 16">
+      <path d="M7 8.5A3.49 3.49 0 0 1 5.95 11h4.1a3.5 3.5 0 1 1 2.45 1h-9A3.5 3.5 0 1 1 7 8.5zm-6 0a2.5 2.5 0 1 0 5 0 2.5 2.5 0 0 0-5 0zm14 0a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0z"/>
+    </svg><br/>Contact Me</h1>
+  <p class="text-center mx-auto para-width body-font">Whether you're looking to hire, or just 
+    looking for someone to freelance, I'm always available. Just email or call, and I'll respond within 1-2 business days.</p>
   <div class="text-center">
-    <a href="mailto:curtis.w.mceachen@gmail.com" class="">curtis.w.mceachen@gmail.com</a>
-    <button href="tel:+2269264042" class="btn">Call me at + 226 926-4042</button>
+    <a href="mailto:curtis.w.mceachen@gmail.com" class="btn btn-light">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+      </svg>  curtis.w.mceachen@gmail.com</a>
+    <button href="tel:+2269264042" class="btn btn-success">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+        <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+      </svg> +1 226 926-4042</button>
+  </div>
+  <div class="text-center websites">
+    <a href="https://www.linkedin.com/in/curtis-mceachen-267212172/" class="btn btn-primary">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+      </svg>
+    </a>
+    <a href="https://github.com/curtismceachen?tab=repositories" class="btn btn-light">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+      </svg>
+    </a>
   </div>
 </div>
 <%- include('./partials/footer') %>
